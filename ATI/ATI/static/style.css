@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #800000; /* Đổi nền thành đỏ đô */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    color: #fff;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.form-container {
+    background-color: #f5f5f5;
+    padding: 30px;
+    border-radius: 10px;
+    width: 350px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+label {
+    display: block;
+    margin: 15px 0 5px;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#result-container {
+    margin-top: 15px;
+}
+
+#result {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #e0e0e0;
+    text-align: center;
+    font-size: 16px;
+}
+/* Styling for the result container */
+.result-container {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #333;
+    color: #FFFFFF;
+    border-radius: 4px;
+    font-size: 1.2em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.result-value {
+    font-weight: bold;
+    font-size: 1.5em;
+    display: block;
+    margin-top: 10px;
+    color: black; /* Gold color for the predicted price */
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Price Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="container">
+    <h1>House Price Prediction</h1>
+    <div class="form-container">
+        <label for="bedrooms">Bedrooms:</label>
+        <input type="text" id="bedrooms" placeholder="Enter the number of bedrooms">
+
+        <label for="bathrooms">Bathrooms:</label>
+        <input type="text" id="bathrooms" placeholder="Enter the number of bathrooms">
+
+        <label for="floors">Floors:</label>
+        <input type="text" id="floors" placeholder="Enter the number of floors">
+
+        <label for="year">Year Built:</label>
+        <input type="text" id="year" placeholder="Enter the year of construction">
+
+        <button onclick="predict()">Predict</button>
+    </div>
+
+    <!-- Result display section, hidden by default -->
+    <div id="result-container" style="display: none;">
+        <p>Predicted House Price:</p>
+        <span id="result" class="result-value"></span>
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
